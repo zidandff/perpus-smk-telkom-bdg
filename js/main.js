@@ -28,11 +28,13 @@ const inputbar = document.querySelector('input.form-control')
 inputbar.addEventListener('focus', function(){
     searchBar.style.transform = "translate(4px, 4px)";
     searchBar.style.boxShadow = "0 0 black";
+    navbar.style.transform = "translateY(-100px)"
 })
 
 inputbar.addEventListener('focusout', function(){
     searchBar.style.transform = "translate(0, 0)";
     searchBar.style.boxShadow = "5px 5px #CF1B1B";
+    navbar.style.transform = "translateY(0)"
 })
 
 // light Gallery library
