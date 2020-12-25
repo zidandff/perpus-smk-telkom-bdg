@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Detail Buku | PERPUSTAKAAN SMK TELKOM BANDUNG</title>
+</head>
+<body>
+<div id="app" class="detail-page">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="logo SMK Telkom Bandung" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: #CF1B1B;transform:-ms-filter"><path d="M4 6H20V8H4zM8 11H20V13H8zM13 16H20V18H13z"></path></svg>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+            <a class="nav-link mx-lg-3"  href="index.html">Beranda</a>
+            <a class="nav-link mx-lg-3 active" aria-current="page" href="katalog.html">Katalog Buku</a>
+            <div class="dropdown mx-lg-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tentang Kami
+                </a>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
+                  <li><a class="dropdown-item" href="#">Gallery</a></li>
+                </ul>
+              </div>
+            <a class="nav-link mx-lg-3" href="#">Berita</a>
+            </div>
+            <a class="my-button mt-3 mt-lg-0" href="#">Login</a>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+        <section >
+            <div class="headline"></div>
+            <div class="container detail">
+                <nav class="py-4" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="katalog.html">Katalog Buku</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Detail Buku</li>
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <img src="assets/img/cover.svg" width="100%" class="rounded" alt="">
+                        <div class="book-status mt-4">
+                            <h5 class="fw-bold">Status</h5>
+                            <p>Tersedia</p>
+                        </div>
+                        <a href="" class="my-button">Pinjam Buku</a>
+                    </div>
+                    <div class="col-md-6 mt-5 mt-md-0">
+                        <div class="book-info">
+                            <div class="info-item">
+                                <h5 class="fw-bold">Penulis</h5>
+                                <p>J. K. Rowling</p>
+                            </div>
+                            <div class="info-item">
+                                <h5 class="fw-bold">Deskripsi</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus suscipit ullamcorper.</p>
+                            </div>
+                            <div class="info-item">
+                                <h5 class="fw-bold">Detail</h5>
+                                <table class="detail-table">
+                                    <tr>
+                                        <td>Jumlah Halaman</td>
+                                        <td>270</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Penerbit</td>
+                                        <td>Gramedia Widiasarana Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tanggal terbit</td>
+                                        <td>26 Feb 2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN</td>
+                                        <td>9786024529048</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Berat</td>
+                                        <td>0.160 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Panjang</td>
+                                        <td>19 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lebar</td>
+                                        <td>13 cm</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h1>Rekomendasi</h1>
+                    <div class="col">
+                        <div class="swiper-container swiper-buku">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide book-slide ">
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <a href="book-detail.html">
+                                                <img src="assets/img/cover.png" class="rounded" alt="">
+                                            </a>
+                                            <a href="book-detail.html" class="judul">Harry Potah</a>
+                                            <p>J. K. Rowling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide book-slide ">
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <a href="book-detail.html">
+                                                <img src="assets/img/cover.png" class="rounded" alt="">
+                                            </a>
+                                            <a href="book-detail.html" class="judul">Harry Potah</a>
+                                            <p>J. K. Rowling</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide book-slide ">
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <a href="book-detail.html">
+                                                <img src="assets/img/cover.png" class="rounded" alt="">
+                                            </a>
+                                            <a href="book-detail.html" class="judul">Harry Potah</a>
+                                            <p>J. K. Rowling</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide book-slide ">
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <a href="book-detail.html">
+                                                <img src="assets/img/cover.png" class="rounded" alt="">
+                                            </a>
+                                            <a href="book-detail.html" class="judul">Harry Potah</a>
+                                            <p>J. K. Rowling</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide book-slide ">
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <a href="book-detail.html">
+                                                <img src="assets/img/cover.png" class="rounded" alt="">
+                                            </a>
+                                            <a href="book-detail.html" class="judul">Harry Potah</a>
+                                            <p>J. K. Rowling</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/lightgallery.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

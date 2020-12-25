@@ -27,6 +27,16 @@ section {
     padding: 50px 0;
 }
 
+.navbar {
+    transition: .3s;
+}
+
+.navbar.colored {
+    background-color: #fff;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    transform: .3s;
+}
+
 .navbar-nav {
     margin-left: auto !important;
 }
@@ -35,7 +45,7 @@ section {
     position: relative;
 }
 
-.nav-link::after {
+.nav-link::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -46,7 +56,7 @@ section {
     transition: .4s;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::before {
     width: 100%;
 }
 
@@ -60,6 +70,7 @@ section {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .my-button:hover{
@@ -125,6 +136,11 @@ input::placeholder {
     background-color: #CF1B1B;
     border-radius: 8px;
     transition: .3s;
+}
+
+.input-group.on-focus {
+    transform: translate(4px, 4px);
+    box-shadow: none;
 }
 
 .input-group-text {
@@ -346,7 +362,203 @@ footer h4 {
     padding-right: 20px;
 }
 
+/* === Halaman Katalog ===*/
+
+.sub-hero {
+    background-image: url(../img/bg-hero2.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 200px 0 40px 0;
+}
+
+.sub-hero .headline {
+    /* position: relative; */
+    border-left: 14px solid #FD2E2E;
+    padding-left: 8px;
+}
+
+/* carousel */
+.swiper-container.swiper-kategori {
+    width: 100%;
+    height: 350px;
+    padding: 20px 0;
+}
+
+.card-kategori {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    border-radius: 8px;
+}
+
+.card-kategori:hover {
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide {
+    border-radius: 8px;
+}
+
+.swiper-kategori .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-color: #1F6F8B;
+}
+.swiper-kategori .swiper-wrapper .swiper-slide:nth-child(2) {
+    background-color: #A4B787;
+}
+.swiper-kategori .swiper-wrapper .swiper-slide:nth-child(3) {
+    background-color: #0278AE;
+}
+.swiper-kategori .swiper-wrapper .swiper-slide:nth-child(4) {
+    background-color: #A3D2CA;
+}
+.swiper-kategori .swiper-wrapper .swiper-slide:nth-child(5) {
+    background-color: #9D7655;
+}
+.swiper-kategori .swiper-wrapper .swiper-slide:nth-child(6) {
+    background-color: #B088F9;
+}
+.swiper-kategori .swiper-wrapper .swiper-slide:nth-child(7) {
+    background-color: #C03A2B;
+}
+
+.swiper-kategori .swiper-slide img {
+    width: 100px;
+}
+
+.my-btn-secondary {
+    background-color: #fff;
+    border: 2px solid #CF1B1B;
+    box-shadow: 3px 3px #CF1B1B;
+    padding: 8px 20px;
+    border-radius: 8px;
+    color: #FD2E2E;
+    text-decoration: none;
+    transition: .2s;
+    display: inline-block;
+}
+.my-btn-secondary:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 #CF1B1B;
+}
+.my-btn-secondary:hover {
+    color: #CF1B1B;
+}
+
+.book-card {
+    display: flex;
+    text-decoration: none;
+    transition: .3s;
+    border-radius: 8px;
+}
+.book-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.book-desc a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.book-desc a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.book-desc {
+    color: #888AA2;
+    padding-right: 50px;
+}
+.book-desc .penulis,
+.book-desc .desc {
+    font-weight: bold;
+    display: block;
+}
+.book-card img {
+    margin-right: 10px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.katalog {
+    background-image: url(../img/shape2.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.page-link {
+    color: #FD2E2E !important;
+}
+.page-item.active .page-link{
+    background-color: #FD2E2E !important;
+    color: #fff !important;
+    border-color: #CF1B1B;
+}
+
+.swiper-buku {
+    padding: 20px 0;
+}
+
+.book-slide {
+    width: 230px;
+    transition: .3s;
+}
+.book-slide:hover {
+    transform: scale(1.05);
+}
+.book-slide img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+.book-slide .judul {
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+}
+.book-slide p {
+    color: #888AA2;
+}
+.book-slide .judul:hover {
+    color: #000000;
+}
+
+/* === END Halaman Katalog ===*/
+
+/* === Halaman detail buku ===*/
+.detail-page {
+    background-image: url(../img/patternpad2.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% 400px;
+}
+
+.detail {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.info-item p,
+.info-item td  {
+    color: #6f7083;
+}
+
+.detail-table {
+    width: 100%;
+}
+/* === End Halaman detail buku ===*/
+
 /* // Medium devices (tablets, less than 992px) */
+@media (min-height: 991.98px){
+    .hero {
+        height: 60vh;
+    }
+}
+
 @media (max-width: 991.98px) {
     .hero {
         background-size: 55%;
@@ -354,6 +566,9 @@ footer h4 {
 
     .card-service {
         width: calc(100%/ 2 - 40px);
+    }
+    .jumlah {
+    background-position:  -3000px, bottom right;
     }
 }
 
@@ -365,12 +580,12 @@ footer h4 {
     .card-service {
         width: calc(100%/ 2 - 30px);
     }
-    .jumlah {
-        background-position:  -3000px, bottom right;
-    }
 
     .gallery {
         background-position: top right;
+    }
+    .sub-hero {
+        background-size: 80%;
     }
 }
 
@@ -397,6 +612,9 @@ footer h4 {
     }
     .info-jumlah h2 {
         font-size: 1.3rem;
+    }
+    .sub-hero {
+        background-size: 100%;
     }
  }
 
