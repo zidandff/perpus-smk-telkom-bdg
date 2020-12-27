@@ -44,6 +44,29 @@ if(inputbar ){
 
 }
 
+// modal img
+const thumbs = document.querySelectorAll(".book-thumb")
+
+if( thumbs.length !== 0 ){
+    const modal = document.querySelector('.modal-img')
+    const imgModal = document.querySelector('.modal-img img')
+    const close = document.querySelector('.close')
+    
+    thumbs.forEach((thumb)=> {
+        thumb.addEventListener('click', (e)=>{
+            imgModal.setAttribute('src', `${e.target.getAttribute('src')}`)
+            modal.classList.add('open')
+        })
+    })
+
+    modal.addEventListener('click', (e)=>{
+        e.target.classList.remove('open')
+    })
+    close.addEventListener('click', ()=>{
+        modal.classList.remove('open')
+    })
+}
+
 // swiper.js
 if(document.querySelector('.swiper-kategori')){
     const mySwiper = new Swiper('.swiper-kategori', {
