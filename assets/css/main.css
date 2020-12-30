@@ -23,8 +23,8 @@ p, a {
 }
 
 section {
-    margin: 70px 0;
-    padding: 50px 0;
+    margin: 20px 0 !important;
+    padding: 70px 0;
 }
 
 .navbar {
@@ -80,7 +80,7 @@ section {
 
 .my-button:active {
     transform: translate(4px, 4px);
-    box-shadow: 0 0 black;
+    box-shadow: 0 0 #CF1B1B;
 }
 
 .navbar-toggler {
@@ -117,33 +117,40 @@ section {
     color: #FD2E2E;
 }
 
-input {
+.search-bar input,
+.login-input {
     border: 3px solid #CF1B1B !important;
-    border-right: none !important;
     border-radius: 8px !important;
+    box-shadow: 5px 5px #CF1B1B !important;
+    transition: 0.3s !important;
 }
 
-input:focus {
+.search-bar input:focus,
+.login-input:focus {
     box-shadow: 0 0 0 0.25rem rgba(253, 46, 46, 0.2) !important;
 }
-
-input::placeholder {
+.search-bar input,
+.login-input{
     color: #DDDDDD !important;
 }
-
-.input-group {
+.login-input:focus {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 #CF1B1B;
+}
+.search-bar {
     box-shadow: 5px 5px #CF1B1B;
     background-color: #CF1B1B;
     border-radius: 8px;
     transition: .3s;
+    display: flex;
 }
 
-.input-group.on-focus {
+.search-bar.on-focus {
     transform: translate(4px, 4px);
-    box-shadow: none;
+    box-shadow: 0 0 #CF1B1B;
 }
 
-.input-group-text {
+.search-bar-text {
     border: 3px solid #CF1B1B !important;
     border-right: none !important;
     padding-right: 0 !important;
@@ -164,6 +171,11 @@ input::placeholder {
 
 .search-btn:focus {
     outline: none !important;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .layanan {
@@ -211,6 +223,7 @@ input::placeholder {
 .paragraf {
     color: #888AA2;
     line-height: 1.8rem;
+    font-size: 1rem;
 }
 
 .profile {
@@ -484,9 +497,11 @@ footer h4 {
     text-decoration: none;
     transition: .3s;
     border-radius: 8px;
+    background-color: #fff;
 }
 .book-card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
 }
 .book-desc a{
     color: #000000;
@@ -580,6 +595,31 @@ footer h4 {
     width: 100%;
 }
 /* === End Halaman detail buku ===*/
+
+/* === Login Page ===*/
+.login-page {
+    min-height: 100vh;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/login-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: calc(100% / 3);
+    padding-top: 85px;
+}
+
+button:focus {
+    outline: none !important;
+}
+.book-animation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1 !important;
+}
+
+/* === End Login Page ===*/
 
 /* // Medium devices (tablets, less than 992px) */
 @media (min-height: 991.98px){

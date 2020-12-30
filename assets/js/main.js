@@ -2,7 +2,7 @@
 const navbar = document.querySelector('.navbar')
 const headline = document.querySelector('.headline')
 window.addEventListener('scroll', ()=> {
-    if(pageYOffset > headline.offsetTop - 80){
+    if(pageYOffset > headline.offsetTop - 30){
         navbar.classList.add('colored')
     }else {
         navbar.classList.remove('colored')
@@ -20,10 +20,10 @@ navToggler.addEventListener('click', ()=> {
 const mediaQuery = window.matchMedia('(max-width: 575.98px)')
 
 // Searchbar animation on focus
-const searchBar = document.querySelector('.input-group');
+const searchBar = document.querySelector('.search-bar');
 const inputbar = document.querySelector('input.form-control')
 
-if(inputbar ){
+if(inputbar && searchBar ){
     inputbar.addEventListener('focus', function(){
         searchBar.classList.add('on-focus')
         // Check if the media query is true
