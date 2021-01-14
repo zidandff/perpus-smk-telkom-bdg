@@ -4,10 +4,12 @@
 @font-face {
     font-family: 'Poppins';
     src: url(../fonts/Poppins-Regular.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: 'Ubuntu';
     src: url(../fonts/Ubuntu-Regular.ttf);
+    font-display: swap;
 }
 
 #app {
