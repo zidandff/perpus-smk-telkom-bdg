@@ -16,14 +16,13 @@
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu';
-}
-
-p, a {
+* {
     font-family: 'Poppins';
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu';
+}
 section {
     margin: 20px 0 !important;
     padding: 70px 0;
@@ -223,9 +222,13 @@ section {
 }
 
 .paragraf {
-    color: #888AA2;
+    color: rgba(0, 0, 0, 0.7);
     line-height: 1.8rem;
     font-size: 1rem;
+}
+
+ul li, ol li {
+    padding-left: 4px;
 }
 
 .profile {
