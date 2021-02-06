@@ -93,6 +93,38 @@ section {
     box-shadow: none !important;
 }
 
+.hamburger {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.hamburger .line {
+    margin: 3px 0;
+    transition: .5s;
+    width: 32px;
+    height: 3px;
+    background-color: red;
+}
+.hamburger .line:nth-child(2) {
+    width: 26px;
+}
+.hamburger .line:nth-child(3) {
+    width: 20px;
+}
+.navbar-toggler.open .hamburger .line:nth-child(1){
+    transform: rotate(45deg) translate(4px, 9px);
+}
+.navbar-toggler.open .hamburger .line:nth-child(2){
+    transform: translateX(50px);
+    opacity: 0;
+}
+.navbar-toggler.open .hamburger .line:nth-child(3){
+    width: 32px;
+    transform: rotate(-45deg) translate(4px, -9px);
+}
+.hamburger:hover .line {
+    width: 32px;
+}
 .hero {
     height: 100vh;
     background-image: url(../img/bg-hero.svg);

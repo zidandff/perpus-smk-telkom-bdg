@@ -9,11 +9,16 @@ window.addEventListener('scroll', ()=> {
     }
 })
 
-// when navbar toggler on click
+// when toggler toggler on click
 const navToggler = document.querySelector('.navbar-toggler')
 navToggler.addEventListener('click', ()=> {
     // change background navbar
     navbar.classList.add('colored')
+})
+
+// Hamburger menu animation
+navToggler.addEventListener("click", ()=> {
+    navToggler.classList.toggle('open')
 })
 
 // media queries
