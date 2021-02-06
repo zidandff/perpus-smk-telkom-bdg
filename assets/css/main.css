@@ -62,21 +62,22 @@ section {
 }
 
 .my-button {
-    background-color: #FD2E2E;
-    border: 2px solid #CF1B1B;
+    background-color: #ffffff;
+    border: 2px solid #FD2E2E;
     padding: 8px 30px;
-    box-shadow: 4px 4px #CF1B1B;
+    box-shadow: 4px 4px #FD2E2E;
     transition: .3s;
     border-radius: 4px;
-    color: #ffffff;
+    color: #FD2E2E;
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
+    font-weight: 600;
 }
 
 .my-button:hover{
-    color: #eeeeee;
-    background-color: #ee2a2a;
+    color: #ffffff;
+    background-color: #ff5757;
 }
 
 .my-button:active {
