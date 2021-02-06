@@ -103,11 +103,6 @@ if(document.querySelector('.swiper-buku')){
         loop: true,
         slidesPerView: 'auto',
         spaceBetween: 30,
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-        },
-
         autoplay: {
             delay: 2000,
         },
